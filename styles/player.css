@@ -1,0 +1,81 @@
+#player{
+  height: 75px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  position: absolute;
+  bottom: 0;
+
+  display: table;
+  white-space: nowrap;
+
+  border-collapse: separate;
+  border-spacing: 10px 0;
+}
+
+#player audio{
+  display: none;
+}
+
+#player .track-artist{
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  left: 50%;
+  top: 10px;
+}
+
+#player .left-button,
+#player .progress,
+#player .volume-container,
+#player .right-button,
+#player .volume-button,
+#player .total-time,
+#player .elapsed-time{
+  display: table-cell;
+}
+
+#player .volume-container{
+  width: 100px;
+  background: none;
+}
+
+#player .volume{
+  display: inline-block;
+  width: 100px;
+  vertical-align: middle;
+}
+
+#player .progress{
+  width: 100%;
+  background: none;
+}
+
+#player .progressbar{
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+#player button{
+  border: none;
+  background: none;
+  vertical-align: middle;
+}
+
+#player button i{
+  font-size: 40px;
+}
+
+#player button .play{
+  font-size: 60px;
+}
+
+#player .random i, #player .repeat i, #player .volume-icon{
+  font-size: 20px;
+}
+
+#player .random.active i, #player .repeat.active i{
+  color: #337ab7;
+}
