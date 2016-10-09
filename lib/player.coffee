@@ -15,7 +15,7 @@ class Player
     @playerView = new PlayerView(@, @cantik)
 
   deactivate: ->
-    if @centralAreaView?
+    if @playerView?
       @playerView.destroy()
 
   serialize: ->
